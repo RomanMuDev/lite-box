@@ -1,0 +1,21 @@
+$color_white: #ffffff;
+$color_black: #000000;
+
+$container_width: 1100px;
+
+// Styles for body
+$font_family_default: "Montserrat", sans-serif;
+$font_size_default: 16px;
+$font_weight_default: 400;
+$color_default: $color_black;
+$line_height_default: 150%;
+$letter_spacing_default: initial;
+
+$DESKTOP_WIDE: 1920px;
+$DESKTOP: 1440px;
+$TABLET_WIDE: 1000px;
+$TABLET: 768px;
+$PHABLET: 560px;
+$MOBILE: 480px;
+
+$duration: 250ms;

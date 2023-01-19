@@ -1,0 +1,28 @@
+// Settings
+@import "../scss/variables.scss";
+
+// Static files
+@import "../scss/fonts.scss";
+@import "../scss/reset.scss";
+@import "../scss/base.scss";
+
+// UI elements
+@import "ui-kit/nav.scss";
+@import "ui-kit/logo.scss";
+@import "ui-kit/interactive.scss";
+@import "ui-kit/title.scss";
+@import "ui-kit/social.scss";
+@import "ui-kit/menu-icon.scss";
+@import "ui-kit/contacts.scss";
+
+// Routes
+// @import '../routes/my-route/my-route.scss';
+
+// Components
+@import "sections/header/header";
+
+//SECTION---
+
+//---
+@import "sections/popup/popup";
+@import "sections/footer/footer";

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('sections/head/_head.html')
+  <body>
+    <div id="root" class="wrapper" v-cloak>
+      @@include('sections/header/_header.html')
+      <main class="page">
+        <h1>App title</h1>
+        <p>{{ app_title }}</p>
+      </main>
+      @@include('sections/footer/_footer.html')
+      @@include('sections/popup/_popup.html')
+    </div>
+    @@include('sections/script/_script.html')
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.menu-icon {
+   display: none;
+   height: 40px;
+   width: 60px;
+   position: relative;
+   z-index: 5;
+   cursor: pointer;
+
+   & span,
+   &::before,
+   &::after {
+      position: absolute;
+      width: 100%;
+      height: 12%;
+      border-radius: 3px;
+      background-color: black;
+      transition-duration: 300ms;
+   }
+   &::before,
+   &::after {
+      content: '';
+   }
+   &::before {
+      top: 0;
+   }
+   &::after {
+      bottom: 0;
+   }
+   & span {
+      top: 50%;
+      transform: translate(0, -50%) scale(1);
+   }
+}
+
+@media (max-width: $TABLET_WIDE){
+   .menu-icon {
+      display: block;
+   }
+   //<!--АНИМАЦИЯ БУРГЕРА-------
+   .menu-icon._active::before {
+      top: 50%;
+      transform: translate(0, -50%) rotate(-45deg);
+   }
+   .menu-icon._active::after {
+      bottom: 50%;
+      transform: translate(0, 50%) rotate(45deg);
+   }
+   .menu-icon._active span {
+      transform: translate(0, -50%) scale(0);
+   }
+}
